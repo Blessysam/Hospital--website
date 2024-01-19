@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    height: 100%;
+   
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: #186e74;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000021;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+.navbar a{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 26px;
+}
+.navbar a:hover{
+    color: rgb(0, 172, 202);
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background:  linear-gradient(rgba(19, 217, 243, 0.13),rgba(19, 209, 243, 0.247)), url(https://wallpaperbat.com/img/487313-hd-medical-wallpaper-medical-wallpaper-medical-background-background-image-hd.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.home h3{
+    font-size: 26px;
+    text-align: center;
+    padding-top: 240px;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+.home h2{
+    font-size: 65px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.home button{
+    margin-bottom: 280px;
+}
+.home .btn{
+    padding: 12px 14px;
+    background: linear-gradient(rgb(89, 185, 209),rgb(255, 255, 255));
+    border-radius: 8px;
+    color: black;
+}
+.about{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 15px 9%;
+}
+.about h2{
+    font-size: 45px;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+.about-container .about-content h3{
+    font-size: 21px;
+    text-align: justify;
+    padding: 20px 0 10px 0;
+}
+.about-container .about-content p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+}
+.about-container .about-content{
+    padding: 10px;
+    flex: 50%;
+}
+.about-container .about-img{
+    padding-top: 130px;
+    flex: 50%;
+    padding-bottom: 190px;
+}
+.about-container .about-img img{
+    border-radius: 12px;
+}
+.doctors{
+    padding: 100px 9%;
+    text-align: center;
+    background-color: rgb(3, 156, 161);
+    
+}
+.doctors .doc-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+    gap: 15px;
+    padding-bottom: 50px;
+}
+.doctors .doc-container .doc-content{
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+.doctors .doc-container .doc-content img{
+    height: 200px;
+    width: 210px;
+}
+.doctors .doc-container .doc-content p{
+    padding: 10px 0;
+}
+.doctors .doc-container .doc-content p i{
+    padding: 15px 0;
+    font-size: 21px;
+}
+.doctors .doc-container .doc-content p i:hover{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(3, 156, 161);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 8px 0 0 0;
+} 
+.services{
+    padding: 100px 9%;
+    text-align: center;
+    background-color: aliceblue;
+}
+.services h2{
+    font-size: 45px;
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.services .service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 40px;
+    padding-bottom: 50px;
+}
+.services .service-container .service-content{
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: rgb(3, 156, 161);
+    text-align: center;
+    padding: 20px 10px;
+}
+.blog{
+    padding: 100px 9%;
+    text-align: center;
+    background-color: rgb(3, 156, 161);
+}
+.blog h2{
+    font-size: 45px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.blog .blog-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 15px;
+    padding-bottom: 100px;
+}
+.blog .blog-container .blog-content{
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: justify;
+    padding: 30px 20px;
+}
+.blog .blog-container .blog-content a i{
+    color: black;
+    padding: 20px 0;
+}
+.blog .blog-container .blog-content h5{
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.blog .blog-container .blog-content .btn{
+    padding: 8px 12px;
+    background-color: #186e74;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.footer{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 15px 9%;
+}
+.footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 20px;
+    padding: 50px 0;
+}
+.footer .footer-container .footer-content{
+    text-align: left;
+    padding: 30px 20px;
+}
+.footer .footer-container .footer-content h3{
+    font-size: 21px;
+    padding: 10px 0;
+}
+.footer .footer-container .footer-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer .footer-container .footer-content a:hover{
+    color: #186e74;
+    text-decoration: underline;
+}
+.footer .footer-icons i{
+    color: #186e74;
+    font-size: 32px;
+    
+}
+.footer .footer-icons i:hover{
+    color: black;
+}
+.footer p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+
+@media (max-width:992px){
+    .header{
+        padding: 20px 5%;
+    }
+    
+}
+
+
+@media (max-width:768px){
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #00000069;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar{
+        height: 280px;
+    }
+    .navbar a{
+        display: block;
+        font-size: 16px;
+        margin: 24px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .doctors{
+        padding: 20px;
+    }
+    .services{
+        padding: 20px;
+
+    }
+    .blog{
+        padding: 20px;
+    }
+    
+}

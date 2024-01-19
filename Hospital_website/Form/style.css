@@ -1,0 +1,33 @@
+#f1{
+    width: 40%; 
+    background-color: rgb(119, 213, 219); 
+    border: none; 
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-image: url();
+}
+form{
+
+    padding: 20px;
+}
+input{
+    padding: 8px 90px 8px 2px;
+    width: 70%;
+    border-radius: 2px;
+    border-width: 1px;
+}
+#gender{
+    padding:0;
+}
+#app_date{
+    padding: 5px 0px 5px 2px;
+   
+}
+#btn{
+    text-align: center;
+    padding: 8px 32px;
+    font-size: 16px;
+}
+#name{
+    text-align: start;
+}

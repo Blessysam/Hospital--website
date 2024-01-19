@@ -1,0 +1,50 @@
+body{
+    margin-left: 25%;
+    background-image: url();
+}
+
+#f1{
+    width: 60%; 
+    background-color: rgba(2, 121, 128, 0.726); 
+    border: none; 
+    padding: 20px;
+    
+}
+form{
+
+    padding: 20px 50px;
+}
+input{
+    padding: 10px 80px 10px 4px;
+    width: 80%;
+    border-radius: 8px;
+    border-width: 1px;
+}
+#doctors{
+    padding: 10px 80px 10px 4px;
+    width: 80%;
+    border-radius: 8px;
+    border-width: 1px;
+}
+#app_date{
+    padding: 5px 0px 5px 2px;
+   
+}
+#gender{
+    width: 10%;
+    
+}
+#btn{
+    text-align: center;
+    padding: 8px 32px;
+    font-size: 16px;
+    background-color: rgb(6, 83, 83);
+    color: white;
+    
+}
+#name{
+    text-align: start;
+}
+h3{
+    text-decoration: underline;
+}
